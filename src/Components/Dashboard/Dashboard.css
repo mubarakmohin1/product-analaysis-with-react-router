@@ -1,0 +1,10 @@
+.chart-container{
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.fig-title{
+    margin-top: 10px;
+    padding-left: 20%;
+}
