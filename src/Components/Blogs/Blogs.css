@@ -1,3 +1,7 @@
 .question-ans{
     margin: 20px 40px;
 }
+.ans-title{
+    font-weight: 800;
+    color: hsl(180, 100%, 50%);
+}

@@ -23,7 +23,7 @@ h1{
     margin: 5px 30px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
     
 }
 .review-title{
