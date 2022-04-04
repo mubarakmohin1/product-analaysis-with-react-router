@@ -27,8 +27,9 @@ h1{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px 8px;
-    margin-left: 40%;
-    background-color: darkorange;
+    margin-left: 45%;
+    background-color:red;
+    cursor: pointer;
     color: white;
     border: none;
     border-radius: 3px;

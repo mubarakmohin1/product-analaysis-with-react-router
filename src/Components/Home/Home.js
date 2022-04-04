@@ -3,11 +3,13 @@ import './Home.css'
 import '../images/panjabi3.jpg.jpg'
 import HomeRivew from '../HomeReview/HomeRivew';
 import useCart from '../../CustomHook/CustomHook';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Home = () => {
-     const [reviewCart,setReviewCart] = useCart()
+     const [reviewCart] = useCart();
+     const navigate = useNavigate()
     return (
         <div>
             <div className='home-container'>
@@ -24,10 +26,14 @@ const Home = () => {
 
             </div>
                 <h1 className='review-title'>Customer Review(3)</h1>
+            <div>
             <div className='review-container'>
                 {
                     (reviewCart.slice(0,3)).map(cart => <HomeRivew key={cart._id} cart={cart}></HomeRivew>)
                 }
+
+            </div>
+            <button onClick={()=> navigate('/review')} className='review-btn'> Display Review</button>
 
             </div>
            
