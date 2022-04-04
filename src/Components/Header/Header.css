@@ -1,0 +1,21 @@
+
+
+.navLink{
+    display: flex;
+    justify-content: end;
+    margin: 20px 40px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navLink a {
+    text-decoration: none;
+    margin-right:30px ;
+    color:black;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.navLink a:hover{
+    color:indianred;
+}
