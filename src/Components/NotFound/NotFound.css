@@ -9,3 +9,10 @@
 .not-found p{
     padding: 20px 100px;
 }
+@media screen and (max-width:480px) {
+    .not-found{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

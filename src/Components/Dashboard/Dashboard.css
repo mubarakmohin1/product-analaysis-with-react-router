@@ -8,3 +8,11 @@
     margin-top: 10px;
     padding-left: 20%;
 }
+@media screen and (max-width:580px) {
+    .chart-container{
+        padding: 0%;
+        grid-gap: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

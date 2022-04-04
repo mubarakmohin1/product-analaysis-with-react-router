@@ -19,3 +19,10 @@
 .navLink a:hover{
     color:indianred;
 }
+@media screen and (max-width:480px) {
+    .navLink{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

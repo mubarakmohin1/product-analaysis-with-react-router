@@ -44,7 +44,7 @@ const Dashboard = () => {
     return (
         <div className='chart-container'>
             <div>
-                <LineChart width={600} height={400} data={data}>
+                <LineChart width={500} height={400} data={data}>
                     <Line dataKey={"investment"}></Line>
                     <Line dataKey={"sell"}></Line>
                     <Line dataKey={"revenue"}></Line>
@@ -55,7 +55,7 @@ const Dashboard = () => {
                 <b className='fig-title'>Fig: Month vs(investment,sell,revenue)</b>
             </div>
             <div>
-                <BarChart width={600} height={400} data={data}>
+                <BarChart width={500} height={400} data={data}>
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Bar dataKey={"investment"}></Bar>
