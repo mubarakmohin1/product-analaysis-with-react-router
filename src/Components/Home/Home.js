@@ -1,9 +1,11 @@
  
 import './Home.css'
-import '../images/panjabi3.jpg.jpg'
+ 
 import HomeRivew from '../HomeReview/HomeRivew';
 import useCart from '../../CustomHook/CustomHook';
 import { useNavigate } from 'react-router-dom';
+ 
+
 
 
 
@@ -21,7 +23,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='photo-container'>
-                    <img src="../images/panjabi3.jpg.jpg" alt="" />
+                    <img src="panjabi1.jpg.webp" alt="" />
                 </div>
 
             </div>
