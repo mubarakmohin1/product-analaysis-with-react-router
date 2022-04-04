@@ -1,21 +1,36 @@
-import React from 'react';
-import './Home.css'
  
+import './Home.css'
+import '../images/panjabi3.jpg.jpg'
+import HomeRivew from '../HomeReview/HomeRivew';
+import useCart from '../../CustomHook/CustomHook';
+
+
 
 const Home = () => {
+     const [reviewCart,setReviewCart] = useCart()
     return (
-        <div className='home-container'>
-            <div className='details-container'>
-                <h1>Eid Collection</h1>
-                <h1> Outstanding! Panjabi Review </h1>
-                <p>
-                    during eid, The first choice of dress is panjabi.At a time it is looking nice everyone.Anyone can give me a panjabi in eid time,i never mind.At least give you a lot of thank you.
-                </p>
-            </div>
-            <div className='photo-container'>
-                
-            </div>
+        <div>
+            <div className='home-container'>
+                <div className='details-container'>
+                    <h1><span className='details-title'>Eid Collection!!</span></h1>
+                    <h1> Outstanding! Panjabi Review </h1>
+                    <p>
+                        during eid, The first choice of dress is panjabi.At a time it is looking nice everyone.Anyone can give me a panjabi in eid time,i never mind.At least give you a lot of thank you.
+                    </p>
+                </div>
+                <div className='photo-container'>
+                    <img src="../images/panjabi3.jpg.jpg" alt="" />
+                </div>
 
+            </div>
+                <h1 className='review-title'>Customer Review(3)</h1>
+            <div className='review-container'>
+                {
+                    (reviewCart.slice(0,3)).map(cart => <HomeRivew key={cart._id} cart={cart}></HomeRivew>)
+                }
+
+            </div>
+           
         </div>
     );
 };
